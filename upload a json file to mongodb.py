@@ -16,13 +16,13 @@ collection = database["data"]
 
 # uploading the file to mongodb
 
-# with open('data.json') as file:
-#     file_data = json.load(file)
-#
-# if isinstance(file_data, list):
-#     collection.insert_many(file_data)
-# else:
-#     collection.insert_one(file_data)
+with open('data.json') as file:
+  file_data = json.load(file)
+
+if isinstance(file_data, list):
+  collection.insert_many(file_data)
+else:
+  collection.insert_one(file_data)
 
 
 # finding a word in the database
