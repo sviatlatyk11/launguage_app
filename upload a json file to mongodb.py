@@ -4,7 +4,7 @@ from pymongo import MongoClient
 import json
 
 # connect to database
-connection = MongoClient("mongodb+srv://sviatoslavlatyk11:F3omowNLEcvi6uMn@connection0.urtg1xc.mongodb.net/?retryWrites=true&w=majority")
+connection = MongoClient("mongodb+srv://<login><password>@connection0.urtg1xc.mongodb.net/?retryWrites=true&w=majority")
 
 
 # creating the database -> name 'Words'
